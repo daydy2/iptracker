@@ -20,6 +20,7 @@ const LandingPage = () => {
                     type="text"
                     name= 'ipadd'
                     id='ipadd'
+                    placeholder='Search for any IP address or domain'
                     value={ip}
                     onChange={handleIp} 
                     />
@@ -27,6 +28,28 @@ const LandingPage = () => {
                 </form>
             </section>
             <MapComp />
+            <div className="div-ipInfo">
+                <ul className="infoList">
+                    <li className="infoListItem">
+                        <h3 className="div__h3-header">ip location</h3>
+                        <p className="div__p-info">192.202.174.101</p>
+                    </li>
+                    <li className="infoListItem">
+                        <h3 className="div__h3-header">ip location</h3>
+                        <p className="div__p-info">192.202.174.101</p>
+                    </li>
+                    <li className="infoListItem">
+                        <h3 className="div__h3-header">ip location</h3>
+                        <p className="div__p-info">192.202.174.101</p>
+                    </li>
+                    <li className="infoListItem">
+                        <h3 className="div__h3-header">ip location</h3>
+                        <p className="div__p-info">192.202.174.101</p>
+                    </li>
+                </ul>
+                
+                    
+            </div>
         </main>
     </div>
   )
