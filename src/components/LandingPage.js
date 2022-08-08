@@ -23,7 +23,7 @@ const LandingPage = () => {
                     value={ip}
                     onChange={handleIp} 
                     />
-                    <button type="submit"><i class="fa-solid fa-angle-right"></i></button>
+                    <button type="submit" className='buttonSub'><i class="fa-solid fa-2x fa-angle-right"></i></button>
                 </form>
             </section>
         </main>

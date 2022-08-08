@@ -31,9 +31,36 @@ html {
 }
 
 form {
-  width: 45%;
-  height: 2.4rem;
+  width: 55%;
   margin: 0 auto;
-  border-radius: 20px;
+  padding: auto;
+}
+
+form > input {
+  border-style: none;
+  outline: none;
+  width: 93%;
+  height: 5.1rem;
+  background: #ffffff;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  color: #969696;
+  border-radius: 10px 0 0 10px;
+}
+
+form .buttonSub {
+  border-style: none;
+  outline: none;
+  background-color: #2b2b2b;
+  padding: 1.5rem .9rem;
+  width: 7%;
+  height: 5.1rem;
+  border-radius: 0 10px 10px 0;
+  margin: auto 0;
+  margin-top: 1rem;
+}
+
+.fa-angle-right {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
