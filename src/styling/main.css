@@ -33,7 +33,14 @@ html {
 form {
   width: 55%;
   margin: 0 auto;
-  padding: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 form > input {
@@ -48,16 +55,22 @@ form > input {
   border-radius: 10px 0 0 10px;
 }
 
+form > input:hover {
+  cursor: pointer;
+}
+
 form .buttonSub {
   border-style: none;
   outline: none;
   background-color: #2b2b2b;
-  padding: 1.5rem .9rem;
+  padding: 1rem auto;
   width: 7%;
   height: 5.1rem;
   border-radius: 0 10px 10px 0;
-  margin: auto 0;
-  margin-top: 1rem;
+}
+
+form .buttonSub:hover {
+  cursor: pointer;
 }
 
 .fa-angle-right {
