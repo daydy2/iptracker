@@ -1,6 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
-import '../../src/styling/main.css'
+import React, { useState } from 'react';
+import '../../src/styling/main.css';
+import MapComp from './MapComp';
+
 
 const LandingPage = () => {
     const [ip, setIp] = useState('');
@@ -8,7 +9,6 @@ const LandingPage = () => {
     const handleIp = (event) => {
         setIp(event.target.value)
     }
-
 
   return (
     <div>
@@ -23,9 +23,10 @@ const LandingPage = () => {
                     value={ip}
                     onChange={handleIp} 
                     />
-                    <button type="submit" className='buttonSub'><i class="fa-solid fa-2x fa-angle-right"></i></button>
+                    <button type="submit" className='buttonSub'><i className="fa-solid fa-2x fa-angle-right"></i></button>
                 </form>
             </section>
+            <MapComp />
         </main>
     </div>
   )
