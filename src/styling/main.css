@@ -76,4 +76,9 @@ form .buttonSub:hover {
 .fa-angle-right {
   color: white;
 }
+
+.popup {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+}
 /*# sourceMappingURL=main.css.map */
