@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.mainpage .section1 {
+  width: 100%;
+  height: 30rem;
+  background: url(./images/pattern-bg.png) no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 5rem;
+}
+
+.mainpage .section1__h1-header {
+  width: 45rem;
+  padding: .4rem;
+  background: transparent;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  font-size: 3.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  padding-bottom: 2.5rem;
+}
+
+form {
+  width: 45%;
+  height: 2.4rem;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=main.css.map */
