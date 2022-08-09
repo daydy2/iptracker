@@ -1,21 +1,48 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import '../../src/styling/main.css';
 import MapComp from './MapComp';
 
 
 const LandingPage = () => {
     const [ip, setIp] = useState('');
+    const [post, setPost] = useState(null);
 
     const handleIp = (event) => {
         setIp(event.target.value)
     }
 
+    const handleSubmit =(e) => {
+        e.preventDefault()
+        console.log(ip)
+        // useEffect(()=>{
+            // axios.get("https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ&ipAddress=", ip).then((response)=>{
+            //     setPost(response.data)
+            //     console.log(response.data)
+            // });
+            axios({
+                url: "https://geo.ipify.org/api/v2/country,city,vpn?apiKey=",
+                method: "GET",
+                dataResponse: "json",
+                params: {
+                  client_id: "at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ",
+                  query: ip,
+                  per_page: 10,
+                },
+              }).then((response) => {
+                console.log(response.data);
+                setPost(response.data);
+              });
+        // })
+    }
+
+    
   return (
     <div>
         <main className="mainpage">
             <section className="section1">
                 <h1 className="section1__h1-header">IP Address Tracker</h1>
-                <form action="/"method='post' className="section__form" onSubmit={(e) => {e.preventDefault()}}>
+                <form className="section__form" onSubmit={handleSubmit}>
                     <input 
                     type="text"
                     name= 'ipadd'
