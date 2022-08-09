@@ -27,7 +27,10 @@ const LandingPage = () => {
                     <button type="submit" className='buttonSub'><i className="fa-solid fa-2x fa-angle-right"></i></button>
                 </form>
             </section>
-            <MapComp />
+            <section className="section2">
+                <MapComp />
+            </section>
+            
             <div className="div-ipInfo">
                 <ul className="infoList">
                     <li className="infoListItem">
