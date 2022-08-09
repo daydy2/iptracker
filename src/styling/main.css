@@ -49,14 +49,41 @@ html {
       -ms-flex-align: start;
           align-items: flex-start;
   position: absolute;
-  z-index: 9;
-  top: 20rem;
+  z-index: 999;
+  top: 25rem;
   left: 10%;
   background: #ffffff;
-  border-radius: .2rem;
-  padding: 1.5rem;
+  border-radius: .3rem;
+  padding: 3rem 1.8rem;
   list-style: none;
   width: 80%;
+  font-family: 'Rubik', sans-serif;
+}
+
+.mainpage .div-ipInfo .infoListItem {
+  padding: 1rem 2rem;
+}
+
+.mainpage .div-ipInfo .infoListItem:not(:last-child) {
+  border-right: 1px solid #969696;
+  margin-right: 2.1rem;
+}
+
+.mainpage .div__h3-header {
+  text-transform: uppercase;
+  color: #969696;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  word-spacing: .4rem;
+  text-align: left;
+  margin-top: -1.3rem;
+}
+
+.mainpage .div__p-info {
+  color: black;
+  margin-top: 2rem;
+  font-size: 2.7rem;
+  font-weight: 700;
 }
 
 form {
