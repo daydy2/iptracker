@@ -133,7 +133,8 @@
         }
     }
     .section2{
-
+        width: 100%
+        ;
         @media screen and (max-width: 499px) and (min-width: 250px){
             &:hover, &:active{
                 z-index: 999;
