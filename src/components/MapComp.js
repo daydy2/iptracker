@@ -5,15 +5,15 @@ import '../styling/main.css';
 const MapComp = ({lat, long}) => {
     console.log(lat, long)
     // const position = [0, 0]
-    const position = [lat, long]
+    const position = [lat, long];
     console.log(position)
 
   return (
     <MapContainer
         center={position}
-        zoom={10}
+        zoom={6}
         style={{height: '100vh', width: '100vw'}}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
     >
         <TileLayer 
             url= 'https://api.maptiler.com/maps/basic-v2/{z}/{x}/{y}.png?key=JUlC1PKRgKXvkLRWga49'

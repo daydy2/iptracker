@@ -112,14 +112,18 @@ html {
   }
 }
 
+.mainpage .div__pInfo {
+  overflow-y: scroll;
+}
+
 .mainpage .div__p-info {
   color: black;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: .6rem;
+  margin-bottom: .6rem;
   font-size: 2.6rem;
   font-weight: 700;
   width: 90%;
-  height: 5rem;
+  height: 9rem;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
@@ -154,6 +158,10 @@ html {
     height: 3rem;
     margin-top: 1.2rem;
   }
+}
+
+.mainpage .section2 {
+  width: 100%;
 }
 
 @media screen and (max-width: 499px) and (min-width: 250px) {

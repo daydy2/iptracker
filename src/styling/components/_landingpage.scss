@@ -91,14 +91,17 @@
                 }
             }
         }
+        &__pInfo{
+            overflow-y: scroll;
+        }
         &__p-info{
             color: black;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin-top: .6rem;
+            margin-bottom: .6rem;
             font-size: 2.6rem;
             font-weight: 700;
             width: 90%;
-            height: 5rem;
+            height: 9rem;
 
             @media screen and (max-width: 1440px) and (min-width: 1200px){
                 &{
