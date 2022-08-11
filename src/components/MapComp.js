@@ -2,13 +2,17 @@ import React from 'react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 import '../styling/main.css';
 
-const MapComp = () => {
-    const position = [6.540680664986485, 3.365289693252744]
+const MapComp = ({lat, long}) => {
+    console.log(lat, long)
+    const position = [0, 0]
+    // const position = [lat, long]
+    console.log(position)
+
   return (
     <MapContainer
         center={position}
         zoom={10}
-        style={{height: '100vh', width: '100vw'}}
+        style={{height: '100vh', width: '100%'}}
         scrollWheelZoom={false}
     >
         <TileLayer 

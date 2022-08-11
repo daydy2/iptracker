@@ -12,27 +12,17 @@ const LandingPage = () => {
         setIp(event.target.value)
     }
 
+    const location = `${post?.location.city}, ${post?.location.country}, ${post?.location.region}`
+
     const handleSubmit =(e) => {
         e.preventDefault()
         console.log(ip)
         // useEffect(()=>{
-            // axios.get("https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ&ipAddress=", ip).then((response)=>{
-            //     setPost(response.data)
-            //     console.log(response.data)
-            // });
-            axios({
-                url: "https://geo.ipify.org/api/v2/country,city,vpn?apiKey=",
-                method: "GET",
-                dataResponse: "json",
-                params: {
-                  client_id: "at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ",
-                  query: ip,
-                  per_page: 10,
-                },
-              }).then((response) => {
-                console.log(response.data);
-                setPost(response.data);
-              });
+            axios.get(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ&ipAddress=${ip}`).then((response)=>{
+                setPost(response.data)
+                console.log(response.data)
+            });
+            
         // })
     }
 
@@ -55,26 +45,26 @@ const LandingPage = () => {
                 </form>
             </section>
             <section className="section2">
-                <MapComp />
+                <MapComp lat={post?.location.lat} long={post?.location.lng}/>
             </section>
             
             <div className="div-ipInfo">
                 <ul className="infoList">
                     <li className="infoListItem">
                         <h3 className="div__h3-header">ip address</h3>
-                        <p className="div__p-info">192.202.174.101</p>
+                        <p className="div__p-info">{post?.ip}</p>
                     </li>
                     <li className="infoListItem">
                         <h3 className="div__h3-header">location</h3>
-                        <p className="div__p-info">Lorem ipsum dolor, sit amet </p>
+                        <p className="div__p-info">{post? location: ""}</p>
                     </li>
                     <li className="infoListItem">
                         <h3 className="div__h3-header">timezone</h3>
-                        <p className="div__p-info">Lorem ipsum dolor, sit amet </p>
+                        <p className="div__p-info">{post?.location.timezone}</p>
                     </li>
                     <li className="infoListItem">
                         <h3 className="div__h3-header">isp</h3>
-                        <p className="div__p-info">Lorem ipsum dolor, sit amet </p>
+                        <p className="div__p-info">{post?.isp}</p>
                     </li>
                 </ul>
                 
