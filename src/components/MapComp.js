@@ -4,15 +4,15 @@ import '../styling/main.css';
 
 const MapComp = ({lat, long}) => {
     console.log(lat, long)
-    const position = [0, 0]
-    // const position = [lat, long]
+    // const position = [0, 0]
+    const position = [lat, long]
     console.log(position)
 
   return (
     <MapContainer
         center={position}
         zoom={10}
-        style={{height: '100vh', width: '100%'}}
+        style={{height: '100vh', width: '100vw'}}
         scrollWheelZoom={false}
     >
         <TileLayer 
