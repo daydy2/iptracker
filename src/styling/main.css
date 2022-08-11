@@ -11,6 +11,7 @@ html {
 
 .mainpage {
   position: relative;
+  width: 100vw;
 }
 
 .mainpage .section1 {
@@ -32,6 +33,13 @@ html {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 599px) and (min-width: 250px) {
+  .mainpage .section1__h1-header {
+    font-size: 2rem;
+    width: 25rem;
+  }
 }
 
 .mainpage .div-ipInfo .infoList {
@@ -153,10 +161,10 @@ html {
 @media screen and (max-width: 499px) and (min-width: 250px) {
   .mainpage .div__p-info {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     text-align: center;
-    height: 3rem;
-    margin-top: 1.2rem;
+    height: 5rem;
+    margin-top: 1rem;
   }
 }
 
