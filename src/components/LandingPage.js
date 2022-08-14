@@ -45,7 +45,7 @@ const LandingPage = () => {
                 </form>
             </section>
             <section className="section2">
-                <MapComp lat={post ? post.location.lat : 0 } long={post? post.location.lng : 0}/>
+                <MapComp lat={post ? post.location.lat : 1 } long={post? post.location.lng : 1}/>
             </section>
             
             <div className="div-ipInfo">
@@ -76,3 +76,5 @@ const LandingPage = () => {
 }
 
 export default LandingPage
+
+// 192.234.34.123
