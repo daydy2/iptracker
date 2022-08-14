@@ -60,11 +60,11 @@ const LandingPage = () => {
                     </li>
                     <li className="infoListItem">
                         <h3 className="div__h3-header">timezone</h3>
-                        <p className="div__p-info">{post?.location.timezone}</p>
+                        <p className="div__p-info">{post?.location.country}: {post?.location.timezone}</p>
                     </li>
                     <li className="infoListItem">
                         <h3 className="div__h3-header">isp</h3>
-                        <p className="div__p-info">{post?.isp}</p>
+                        <p className="div__p-info div__pInfo">{post?.isp}</p>
                     </li>
                 </ul>
                 
