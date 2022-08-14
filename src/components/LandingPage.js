@@ -18,7 +18,7 @@ const LandingPage = () => {
         e.preventDefault()
         console.log(ip)
         // useEffect(()=>{
-            axios.get(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ&ipAddress=${ip}`).then((response)=>{
+            axios.get(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_gBcFur5JuHyXcGM8tMbVzi2izQhB8&ipAddress=${ip}`).then((response)=>{
                 setPost(response.data)
                 console.log(response.data)
             });

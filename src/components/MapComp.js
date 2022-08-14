@@ -11,11 +11,7 @@ const MapComp = ({lat, long}) => {
   return (
     <MapContainer
         center={position}
-<<<<<<< HEAD
         zoom={1.5}
-=======
-        zoom={6}
->>>>>>> master
         style={{height: '100vh', width: '100vw'}}
         scrollWheelZoom={true}
     >
