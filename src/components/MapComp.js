@@ -7,11 +7,12 @@ const MapComp = ({lat, long}) => {
     // const position = [0, 0]
     const position = [lat, long];
     console.log(position)
+    
 
   return (
     <MapContainer
         center={position}
-        zoom={6}
+        zoom={6} 
         style={{height: '100vh', width: '100vw'}}
         scrollWheelZoom={true}
     >

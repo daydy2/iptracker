@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../../src/styling/main.css';
 import MapComp from './MapComp';
 
@@ -16,14 +16,14 @@ const LandingPage = () => {
 
     const handleSubmit =(e) => {
         e.preventDefault()
-        console.log(ip)
+       
         // useEffect(()=>{
-            axios.get(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_a8QREprc6A5MegcB6NEfbT9Uh5wrZ&ipAddress=${ip}`).then((response)=>{
+            axios.get(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_gis3yR9EohK8h19EmSuDacmhmCWn0&ipAddress=${ip}`).then((response)=>{
                 setPost(response.data)
                 console.log(response.data)
-            });
+            // });
             
-        // })
+        })
     }
 
     
