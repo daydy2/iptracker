@@ -11,7 +11,7 @@ const MapComp = ({lat, long}) => {
   return (
     <MapContainer
         center={position}
-        zoom={6}
+        zoom={1.5}
         style={{height: '100vh', width: '100vw'}}
         scrollWheelZoom={true}
     >
@@ -29,4 +29,6 @@ const MapComp = ({lat, long}) => {
   )
 }
 
-export default MapComp
+export default MapComp;
+
+// https://ipfind.co/?ip=197.234.34.158&auth=901ec5ad-7b00-4b4d-975d-248561dd7970
