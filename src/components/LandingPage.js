@@ -18,6 +18,7 @@ const LandingPage = () => {
         e.preventDefault()
        
         // useEffect(()=>{
+
             axios.get(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_gis3yR9EohK8h19EmSuDacmhmCWn0&ipAddress=${ip}`).then((response)=>{
                 setPost(response.data)
                 console.log(response.data)
@@ -45,7 +46,7 @@ const LandingPage = () => {
                 </form>
             </section>
             <section className="section2">
-                <MapComp lat={post ? post.location.lat : 0 } long={post? post.location.lng : 0}/>
+                <MapComp lat={post ? post.location.lat : 1 } long={post? post.location.lng : 1}/>
             </section>
             
             <div className="div-ipInfo">
@@ -76,3 +77,5 @@ const LandingPage = () => {
 }
 
 export default LandingPage
+
+// 192.234.34.123
