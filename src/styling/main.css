@@ -69,6 +69,22 @@ html {
   font-family: 'Rubik', sans-serif;
 }
 
+@media screen and (max-width: 699px) and (min-width: 500px) {
+  .mainpage .div-ipInfo .infoList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 20rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .mainpage .div-ipInfo .infoListItem {
+    margin-right: 0;
+    border-style: none;
+  }
+}
+
 @media screen and (max-width: 499px) and (min-width: 250px) {
   .mainpage .div-ipInfo .infoList {
     -webkit-box-orient: vertical;
@@ -86,7 +102,7 @@ html {
 }
 
 .mainpage .div-ipInfo .infoListItem {
-  padding: 1rem 2rem;
+  padding: .8rem 1.5rem;
   width: 100%;
 }
 
@@ -112,6 +128,13 @@ html {
   word-spacing: .4rem;
   text-align: left;
   margin-top: -1.3rem;
+}
+
+@media screen and (max-width: 699px) and (min-width: 500px) {
+  .mainpage .div__h3-header {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 499px) and (min-width: 250px) {
