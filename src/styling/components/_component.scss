@@ -1,3 +1,30 @@
 .fa-angle-right{
     color: white
 }
+.fa-xmark{
+    background: transparent;
+    color:  black;
+    position: absolute;
+    bottom: 14rem;
+    right: .8rem;
+    transition: 400ms ease-in;
+    outline-offset: .1rem;
+    border-radius: 5px;
+    padding: .4rem;
+
+    &:hover{
+        color: $color-red;
+        outline: .2rem solid $color-red;
+    }
+    @media screen and (max-width: 699px) and (min-width: 500px){
+        &{
+            bottom: 16rem;
+        }
+        
+    }
+    @media screen and (max-width: 499px) and (min-width: 250px){
+        &{
+            bottom: 26rem;
+        }
+    }
+}
